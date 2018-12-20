@@ -6,6 +6,8 @@ pool:
 variables:
   imageName: 'pythonsample:$(Build.BuildId)'
   # define two more variables dockerId and dockerPassword in the build pipeline in UI
+  dockerId: 'dockerPythonTestRegistry'
+  dockerPassword: '0jAQ27WiU3T+hwpVXxObbVJbrHBrDBzq'
 
 steps:
 - task: UsePythonVersion@0
